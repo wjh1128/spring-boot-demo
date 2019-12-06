@@ -10,7 +10,7 @@ public interface IUserService {
      * 根据用户的id查询用户
      *
      * @param id
-     * @return
+     * @return user对象
      */
     User getUserById(Integer id);
 
@@ -18,7 +18,7 @@ public interface IUserService {
      * 创建一个用户信息
      *
      * @param user
-     * @return
+     * @return 返回int类型受影响的行数
      */
     int create(User user);
 
@@ -26,7 +26,7 @@ public interface IUserService {
      * 更新用户的信息
      *
      * @param user
-     * @return
+     * @return 返回int类型受影响的行数
      */
     int updateUser(User user);
 
@@ -40,8 +40,8 @@ public interface IUserService {
     /**
      * 根据用户的id来删除用户
      *
-     * @param id
-     * @return
+     * @param user
+     * @return 返回int类型受影响的行数
      */
-    int deleteById(Integer id);
+    int deleteById(User user);
 }
